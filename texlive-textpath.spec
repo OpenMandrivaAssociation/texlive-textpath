@@ -51,3 +51,16 @@ and allowing for 8-bit input (accented characters).
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar metapost tex doc %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.6-2
++ Revision: 756789
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.6-1
++ Revision: 719720
+- texlive-textpath
+- texlive-textpath
+- texlive-textpath
+
