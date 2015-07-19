@@ -6,7 +6,7 @@
 # catalog-version 1.6
 Name:		texlive-textpath
 Version:	1.6
-Release:	9
+Release:	10
 Summary:	Setting text along a path with MetaPost
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/metapost/contrib/macros/textpath
