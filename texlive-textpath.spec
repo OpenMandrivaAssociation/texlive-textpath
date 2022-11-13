@@ -1,18 +1,12 @@
-# revision 15878
-# category Package
-# catalog-ctan /graphics/metapost/contrib/macros/textpath
-# catalog-date 2007-02-22 10:19:41 +0100
-# catalog-license lppl
-# catalog-version 1.6
 Name:		texlive-textpath
-Version:	1.6
-Release:	11
+Version:	15878
+Release:	1
 Summary:	Setting text along a path with MetaPost
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/metapost/contrib/macros/textpath
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/textpath.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/textpath.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/textpath.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/textpath.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -24,12 +18,12 @@ free path with the help of LaTeX, thereby preserving kerning
 and allowing for 8-bit input (accented characters).
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -44,23 +38,10 @@ and allowing for 8-bit input (accented characters).
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar metapost tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.6-2
-+ Revision: 756789
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.6-1
-+ Revision: 719720
-- texlive-textpath
-- texlive-textpath
-- texlive-textpath
-
