@@ -3,7 +3,7 @@ Version:	15878
 Release:	2
 Summary:	Setting text along a path with MetaPost
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/graphics/metapost/contrib/macros/textpath
+URL:		https://www.ctan.org/tex-archive/graphics/metapost/contrib/macros/textpath
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/textpath.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/textpath.doc.r%{version}.tar.xz
